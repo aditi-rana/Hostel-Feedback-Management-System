@@ -1,0 +1,273 @@
+<html>
+
+<head>
+
+<title>Hostel Management System</title>
+
+<style type="text/css">
+
+ 
+
+ 
+
+ul {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: #1C1C1C;
+
+}
+
+ 
+
+li {
+
+    float: left;
+
+}
+
+ 
+
+li a {
+
+    display: block;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+}
+
+ 
+
+li a:hover:not(.active) {
+
+    background-color: #111;
+
+}
+
+ 
+
+.active {
+
+                color: rgba(255, 255, 255, 0.7);
+
+    }
+
+ 
+
+ 
+
+.mySlides {display:none;}
+
+ 
+
+ 
+
+#first
+
+{
+
+height:500px;
+
+width:500px;
+
+}
+
+ 
+
+#second
+
+{
+
+height:120px;
+
+width:400px;
+
+margin-left:-200px;
+
+text-align: justify;
+
+text-justify: inter-word;
+
+}
+
+ 
+
+#third
+
+{
+
+height:60px;
+
+width:100%;
+
+background-color:black;
+
+}
+
+ 
+
+ 
+
+</style>
+
+</head>
+
+<body>
+
+ 
+
+<header>
+
+<br/><br/><br/>
+
+ 
+
+<center>
+
+<img src="logo.jpg" style="height:150px;width:150px;border-radius:15px;"/>
+
+<br/><br/>
+
+<h1><font color="#1C1C1C">HOSTEL MANAGEMENT SYSTEM</font></h2>
+
+<h3><font color="#424242">-Explore Your Potential-</font></h3>
+
+</center>
+
+ 
+
+</header>
+
+<br/><br/>
+
+ 
+
+ 
+
+<b><font size="+1">
+
+<ul>
+
+  <li style="margin-left:318px;"><a class="active" href="#home">Home</a></li>
+
+  <li><a href="#news">Mess Facilities</a></li>
+
+  <li><a href="#news">Rooms</a></li>
+
+  <li><a href="#news">Laundry</a></li>
+
+  <li><a href="#about">Others</a></li>
+
+  <li><a href="#about">Solutions</a></li>
+
+  <li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</font></b>
+
+ 
+
+ 
+
+<div class="w3-content w3-section">
+
+  <img class="mySlides" src="baner.jpg" style="width:100%">
+
+  <img class="mySlides" src="baner.jpg" style="width:100%">
+
+  <img class="mySlides" src="baner.jpg" style="width:100%">
+
+</div>
+
+ 
+
+<script>
+
+var myIndex = 0;
+
+carousel();
+
+ 
+
+function carousel() {
+
+    var i;
+
+    var x = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < x.length; i++) {
+
+       x[i].style.display = "none"; 
+
+    }
+
+    myIndex++;
+
+    if (myIndex > x.length) {myIndex = 1}   
+
+    x[myIndex-1].style.display = "block"; 
+
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+
+}
+
+</script>
+
+ 
+
+ 
+
+<br/><br/>
+
+ 
+
+ 
+
+<center><div id="first">
+
+<br/>
+
+<font size="+3" color="#6E6E6E" style="margin-left:-700px;">Home</font><br/><br/>
+
+<div id="second">
+
+<font size="+1" color="black" style="">The aim to develop this application to give the university students where they can share their day-to-day problems/suggestions with the management regarding the hostel stay, food, mess facilities, laundry, etc.</font>
+
+</div>
+
+</div>
+
+</center>
+
+<br/>
+
+ 
+
+ 
+
+<div id="third">
+
+<center>
+
+<br/><font color="grey"> Copyright ©2017 Chitkara Educational Trust </font></center>
+
+</div>
+
+ 
+
+</body>
+
+</html>

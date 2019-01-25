@@ -1,0 +1,4 @@
+<?php
+    mail('adeityrana@gmail.com', $_POST['name'], $_POST['gn'], $_POST['en'], $_POST['hostel'], $_POST['topic']);
+?>
+<p>Your email has been sent.</p>
